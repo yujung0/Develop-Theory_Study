@@ -2,7 +2,7 @@
 
 
 
-## :memo: Table of Contents
+## :memo: Table of Contents (강의 목차)
 
 - 
 - 
@@ -43,7 +43,7 @@
 추가로 링크 걸 사이트가 있을 경우 추가
 
 ---
-
+<br></br>
 # Part 1. 과목 이름 (대주제)
 
 ## :bulb: 소제목 [Link](링크)
