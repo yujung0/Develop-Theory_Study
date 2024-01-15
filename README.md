@@ -1,168 +1,146 @@
-# Develop-Theory_Study
-
-
+# 소프트웨어 이해하기
 
 ## :memo: Table of Contents (강의 목차)
 
-- 
-- 
-- 
-  - 
-  - 
-  - 
-  - 
-  - 
-  - 
-  - 
-- 
-  - 
-  - 
-  - 
-- 
-  - 
-  -
-- 
-</br>
-</br>
+- Part 1. 컴파일러와 인터프리터
+  - 다양한 애플리케이션
+  - 소프트웨어 퀴즈 I
+  - 애플리케이션을 만드는 프로그램
+  - 프로그래밍 언어의 번역기, 컴파일러
+  - 실시간 코드 실행기, 인터프리터
+  - 컴파일러 vs 인터프리터
+  - 소프트웨어 퀴즈 II
+  - 꿀팁 노트: 첫 번째 컴파일러는 어떻게 만들었을까요
 
+- Part 2. 운영 체제 개요
+  - 애플리케이션을 도와주는 프로그램, 운영 체제
+  - 운영 체제의 역할 I (입력과 출력)
+  - 운영 체제의 역할 II (저장과 불러오기)
+  - 운영 체제의 역할 III (여러 프로그램 동시에 빠르게 실행하기)
+  - 운영 체제의 종류
+  - 운영 체제의 발전 역사
+  - 소프트웨어 퀴즈 III
+
+- Part 3. 네이티브 애플리케이션과 웹 애플리케이션
+  - 플랫폼의 파편화
+  - 표준의 필요성
+  - 크로스 플랫폼 I (가상 머신)
+  - 크로스 플랫폼 II (웹)
+  - 소프트웨어 퀴즈 IV
+  - 네이티브 애플리케이션과 웹 애플리케이션
+  - 웹을 활용하는 여러 가지 방법
 # What is this?
-
-
-
 
 ### :sparkles: HELP
 ##### :pray: [HOW TO CONTRIBUTE](https://github.com/JaeYeopHan/Interview_Question_for_Beginner/blob/master/CONTRIBUTING.md)
-##### :star: 
+##### :star: [강의 링크](https://www.codeit.kr/topics/intro-to-software)
+
 </br>
 </br>
 
 ---
 
-### [따로 링크 걸 제목]()
+</br>
+</br>
 
-추가로 링크 걸 사이트가 있을 경우 추가
+# Part 1. 컴파일러와 인터프리터
 
----
-<br></br>
-# Part 1. 과목 이름 (대주제)
+## :bulb: 다양한 애플리케이션
+01. 강의 내용
 
-## :bulb: 소제목 [Link](링크)
-- ex) 객체 지향 프로그래밍이란 무엇인가? -> 강의 제목 적기
-- 
-- 
--
-- 
-- 
-</br>
-<!-- ## :bulb: 소제목 [Link](링크)
-- Array vs LinkedList
-- Stack and Queue
-- Tree
-  - Binary Tree
-  - Full Binary Tree
-  - Complete Binary Tree
-  - BST(Binary Search Tree)
-- Binary Heap
-- Red-Black Tree
-  - 정의
-  - 특징
-  - 삽입
-  - 삭제
-- HashTable
-  - hash function
-  - Resolve Collision
-    - Open Addressing
-    - Separate Chaining
-  - Resize
-- Graph
-  - Graph 용어 정리
-  - Graph 구현
-  - Graph 탐색
-  - Minimum Spanning Tree
-    - Kruskal algorithm
-    - Prim algorithm
-</br>
- ## :bulb: 네트워크 [Link](https://github.com/JaeYeopHan/Beginner_for_interview/tree/master/Network)
-- GET, POST 방식의 차이점
-- TCP 3-way-handshake
-- TCP 와 UDP 의 차이점
-- HTTP 와 HTTPS 의 차이점
-  - HTTP 의 문제점들
-- DNS round robin 방식
-- 웹 통신의 큰 흐름
-</br>
-## :bulb: 운영체제 [Link](https://github.com/JaeYeopHan/Beginner_for_interview/tree/master/OS)
-- 프로세스와 스레드의 차이
-- 스케줄러의 종류
-  - 장기 스케줄러
-  - 단기 스케줄러
-  - 중기 스케줄러
-- CPU 스케줄러
-  - FCFS
-  - SJF
-  - SRT
-  - Priority scheduling
-  - RR
-- 동기와 비동기의 차이
-- 멀티스레드
-  - 장점과 단점
-- 프로세스 동기화
-  - Critical Section
-  - 해결책
-- 메모리 관리 전략
-  - 메모리 관리 배경
-  - Paging
-  - Segmentation
-- 가상 메모리
-  - 배경
-  - 가상 메모리가 하는 일
-  - Demand Paging(요구 페이징)
-  - 페이지 교체 알고리즘
-- 캐시의 지역성
-  - Locality
-  - Caching line
-</br>
-## :bulb: 데이터베이스 [Link](https://github.com/JaeYeopHan/Beginner_for_interview/tree/master/Database)
-- 데이터베이스
-  - 데이터베이스를 사용하는 이유
-  - 데이터베이스 성능
-- Index
-  - Index 란 무엇인가
-  - Index 의 자료구조
-  - Primary index vs Secondary index
-  - Composite index
-  - Index 의 성능과 고려해야할 사항
-- 정규화에 대해서
-  - 정규화 탄생 배경
-  - 정규화란 무엇인가
-  - 정규화의 종류
-  - 정규화의 장단점
-- Transaction
-  - 트랜잭션(Transaction)이란 무엇인가?
-  - 트랜잭션과 Lock
-  - 트랜잭션의 특성
-  - 트랜잭션의 상태
-  - 트랜잭션을 사용할 때 주의할 점
-- Statement vs PrepareStatement
-- NoSQL
-  - 정의
-  - CAP 이론
-    - 일관성
-    - 가용성
-    - 네트워크 분할 허용성
-  - 저장방식에 따른 분류
-    - Key-Value Model
-    - Document Model
-    - Column Model -->
-    
+## :bulb: 소프트웨어 퀴즈 I
+02. 강의 내용
+
+## :bulb: 애플리케이션을 만드는 프로그램
+03. 강의 내용
+
+## :bulb: 프로그래밍 언어의 번역기, 컴파일러
+04. 강의 내용
+
+## :bulb: 실시간 코드 실행기, 인터프리터
+05. 강의 내용
+
+## :bulb: 컴파일러 vs 인터프리터
+06. 강의 내용
+
+## :bulb: 소프트웨어 퀴즈 II
+07. 강의 내용
+
+## :bulb: 꿀팁 노트: 첫 번째 컴파일러는 어떻게 만들었을까요?
+08. 강의 내용
+
 #### 추가자료
-- [추가자료의 제목](링크)
-</br>
-
-
-</br>
+- 추가자료 내용
 
 </br>
 </br>
 
+</br>
+</br>
+
+# Part 2. 운영 체제 개요
+
+## :bulb: 애플리케이션을 도와주는 프로그램, 운영 체제
+01. 강의 내용
+
+## :bulb: 운영 체제의 역할 I (입력과 출력)
+02. 강의 내용
+
+## :bulb: 운영 체제의 역할 II (저장과 불러오기)
+03. 강의 내용
+
+## :bulb: 운영 체제의 역할 III (여러 프로그램 동시에 빠르게 실행하기)
+04. 강의 내용
+
+## :bulb: 운영 체제의 종류
+05. 강의 내용
+
+## :bulb: 운영 체제의 발전 역사
+06. 강의 내용
+
+## :bulb: 소프트웨어 퀴즈 III
+07. 강의 내용
+
+#### 추가자료
+- 추가자료 내용
+
+</br>
+</br>
+
+</br>
+</br>
+
+# Part 3. 네이티브 애플리케이션과 웹 애플리케이션
+
+## :bulb: 플랫폼의 파편화
+01. 강의 내용
+
+## :bulb: 표준의 필요성
+02. 강의 내용
+
+## :bulb: 크로스 플랫폼 I (가상 머신)
+03. 강의 내용
+
+## :bulb: 크로스 플랫폼 II (웹)
+04. 강의 내용
+
+## :bulb: 소프트웨어 퀴즈 IV
+05. 강의 내용
+
+## :bulb: 네이티브 애플리케이션과 웹 애플리케이션
+06. 강의 내용
+
+## :bulb: 웹을 활용하는 여러 가지 방법
+07. 강의 내용
+
+#### 추가자료
+- 추가자료 내용
+
+
+---
+## 참여 인원
+
+- 스터디원 1
+- 스터디원 2
+- 스터디원 3
 
