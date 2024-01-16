@@ -1,3 +1,16 @@
+# :wave: 소개
+
+
+비전공자들이 모여 굴러가는 프로그래밍 및 네트워크 이론 스터디 입니다. <br>
+프로그래밍 언어의 사용 범위가 점차 넓어짐에 따라, 비전공자도 컴퓨팅적 사고력이 무엇인지 이해하고 이를 체득해야 한다는 것을 깨달으며 만들었습니다.
+<br></br>
+주 1회, 이론 강의에 한 섹터를 함께 시청하며 관련된 이야기를 나누고 정리합니다. <br>
+또한, 시청한 강의 내용 외 궁금증이 생기면 같이 찾아보고 기록하여 폭넓은 지식을 쌓는 것이 목표 입니다.
+
+
+<br>
+</br>
+
 # 소프트웨어 이해하기
 
 ## :memo: Table of Contents (강의 목차)
@@ -31,7 +44,7 @@
   - 웹을 활용하는 여러 가지 방법
 # What is this?
 
-### :sparkles: HELP
+#### :sparkles: HELP
 ##### :pray: [HOW TO CONTRIBUTE](https://github.com/JaeYeopHan/Interview_Question_for_Beginner/blob/master/CONTRIBUTING.md)
 ##### :star: [강의 링크](https://www.codeit.kr/topics/intro-to-software)
 
